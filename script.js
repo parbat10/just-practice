@@ -37,3 +37,21 @@
 // let and const respect the bloxk scope 
 // var is not block scope - its unction scoped, which can cause bugs in future.
 
+// .filter()
+console.log([1,-2,5].filter((value,index)=>
+    {
+    /*
+    if (value>=0){
+    return true;
+    }else{
+    return false    
+    }
+    */
+   return value >= 0;
+}));
+
+//.map();
+
+    console.log([1,2,3].map((value,index)=>{
+        return value*2;
+    }));
